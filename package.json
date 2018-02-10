@@ -4,7 +4,7 @@
   "description": "calCV",
   "main": "index.js",
   "scripts": {
-    "start": "npm start",
+    "start": "node-sass public/stylesheets/sass/main.scss public/stylesheets/css/style.css",
     "compile:sass": "node-sass public/stylesheets/sass/main.scss public/stylesheets/css/style.css -w"
   },
   "author": "",
