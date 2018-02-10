@@ -2,9 +2,9 @@
   "name": "calcv",
   "version": "1.0.0",
   "description": "calCV",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "compile:sass": "node-sass public/stylesheets/sass/main.scss public/stylesheets/css/style.css -w"
   },
   "author": "",
