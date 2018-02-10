@@ -1,0 +1,168 @@
+/*! ionicons-inline v0.0.11 | MIT | https://github.com/rstacruz/ionicons-inline */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: 'Lato', 'san-serif'; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  line-height: 1.7;
+  box-sizing: border-box; }
+
+.background-image {
+  display: flex;
+  flex-direction: row;
+  background-image: url("/public/images/campus.png");
+  background-repeat: no-repeat;
+  height: 78vh;
+  background-position: center top;
+  background-attachment: fixed;
+  margin-top: 1rem; }
+
+.navs {
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  background-color: #ffffff;
+  margin: 0rem auto 0 auto;
+  padding: 1rem 8rem 0 6rem; }
+
+.twitter {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22rgb(0%2C0%2C0)%22%20d%3D%22M492%20109.5c-17.4%207.7-36%2012.9-55.6%2015.3%2020-12%2035.4-31%2042.6-53.6-18.7%2011.1-39.4%2019.2-61.5%2023.5C399.8%2075.8%20374.6%2064%20346.8%2064c-53.5%200-96.8%2043.4-96.8%2096.9%200%207.6.8%2015%202.5%2022.1-80.5-4-151.9-42.6-199.6-101.3-8.3%2014.3-13.1%2031-13.1%2048.7%200%2033.6%2017.2%2063.3%2043.2%2080.7-16-.4-31-4.8-44-12.1v1.2c0%2047%2033.4%2086.1%2077.7%2095-8.1%202.2-16.7%203.4-25.5%203.4-6.2%200-12.3-.6-18.2-1.8%2012.3%2038.5%2048.1%2066.5%2090.5%2067.3-33.1%2026-74.9%2041.5-120.3%2041.5-7.8%200-15.5-.5-23.1-1.4C62.8%20432%20113.7%20448%20168.3%20448%20346.6%20448%20444%20300.3%20444%20172.2c0-4.2-.1-8.4-.3-12.5C462.6%20146%20479%20129%20492%20109.5z%22%2F%3E%3C%2Fsvg%3E") center center/3rem 3rem no-repeat;
+  height: 3rem;
+  width: 3rem; }
+
+.fb {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22rgb(0%2C0%2C0)%22%20d%3D%22M426.8%2064H85.2C73.5%2064%2064%2073.5%2064%2085.2v341.6c0%2011.7%209.5%2021.2%2021.2%2021.2H256V296h-45.9v-56H256v-41.4c0-49.6%2034.4-76.6%2078.7-76.6%2021.2%200%2044%201.6%2049.3%202.3v51.8h-35.3c-24.1%200-28.7%2011.4-28.7%2028.2V240h57.4l-7.5%2056H320v152h106.8c11.7%200%2021.2-9.5%2021.2-21.2V85.2c0-11.7-9.5-21.2-21.2-21.2z%22%2F%3E%3C%2Fsvg%3E") center center/3rem 3rem no-repeat;
+  height: 3rem;
+  width: 3rem; }
+
+.insta {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Ccircle%20fill%3D%22rgb(0%2C0%2C0)%22%20cx%3D%22256%22%20cy%3D%22255.833%22%20r%3D%2280%22%2F%3E%3Cpath%20fill%3D%22rgb(0%2C0%2C0)%22%20d%3D%22M177.805%20176.887c21.154-21.154%2049.28-32.93%2079.195-32.93s58.04%2011.838%2079.195%2032.992c13.422%2013.42%2023.01%2029.55%2028.232%2047.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51%200-49%2020.49-49%2047v113h85.072c5.222-18%2014.81-34.19%2028.233-47.613zM416.5%20147.7c0%207.07-5.73%2012.8-12.8%2012.8h-38.4c-7.07%200-12.8-5.73-12.8-12.8v-38.4c0-7.07%205.73-12.8%2012.8-12.8h38.4c7.07%200%2012.8%205.73%2012.8%2012.8v38.4zM336.195%20335.28c-21.154%2021.153-49.28%2032.678-79.195%2032.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0%2026.51%2022.49%2049%2049%2049h288c26.51%200%2047-22.49%2047-49v-143h-79.502c-.043%2029-11.687%2057.664-32.803%2078.78z%22%2F%3E%3C%2Fsvg%3E") center center/3rem 3rem no-repeat;
+  height: 3rem;
+  width: 3rem; }
+
+.row {
+  display: flex; }
+  .row--sections {
+    margin: 1.3rem 0 0 0;
+    list-style-type: none;
+    justify-content: flex-end; }
+    .row--sections a {
+      color: #000;
+      padding: .7rem;
+      border-radius: 2rem; }
+      .row--sections a:link {
+        text-decoration: none;
+        color: #000; }
+      .row--sections a:active, .row--sections a:hover {
+        background-color: #eceff1; }
+    .row--sections--each {
+      font-size: 1.7rem; }
+
+.column {
+  flex: 50%;
+  max-width: 50%; }
+  .column--icons {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-right: 1.2rem; }
+    .column--icons--each {
+      padding-left: .7rem;
+      transition-timing-function: linear;
+      transition-duration: .2s; }
+      .column--icons--each:hover {
+        transform: scale(1.2, 1.2); }
+  .column--brand {
+    list-style-type: none;
+    font-size: 3rem; }
+    .column--brand a {
+      color: #000; }
+      .column--brand a:link {
+        text-decoration: none;
+        color: #000; }
+      .column--brand a:active, .column--brand a:hover {
+        background-color: #fff;
+        border-radius: 10rem; }
+    .column--brand p {
+      font-size: 1.8rem;
+      margin-left: 1.6rem;
+      transform: translateY(-1rem); }
+
+.books {
+  background-image: url("/public/images/Bookshelves.jpg");
+  background-repeat: no-repeat;
+  height: 78vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain; }
+
+.cv h1, .contact h1, .about h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 2rem; }
+
+.cv iframe, .contact iframe, .about iframe {
+  margin: 0 auto; }
+
+.cv p, .contact p, .about p {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 12rem; }
+
+.contact {
+  display: block;
+  text-align: center; }
+
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2rem; }
+
+.twitter-contact {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22rgb(0%2C0%2C0)%22%20d%3D%22M492%20109.5c-17.4%207.7-36%2012.9-55.6%2015.3%2020-12%2035.4-31%2042.6-53.6-18.7%2011.1-39.4%2019.2-61.5%2023.5C399.8%2075.8%20374.6%2064%20346.8%2064c-53.5%200-96.8%2043.4-96.8%2096.9%200%207.6.8%2015%202.5%2022.1-80.5-4-151.9-42.6-199.6-101.3-8.3%2014.3-13.1%2031-13.1%2048.7%200%2033.6%2017.2%2063.3%2043.2%2080.7-16-.4-31-4.8-44-12.1v1.2c0%2047%2033.4%2086.1%2077.7%2095-8.1%202.2-16.7%203.4-25.5%203.4-6.2%200-12.3-.6-18.2-1.8%2012.3%2038.5%2048.1%2066.5%2090.5%2067.3-33.1%2026-74.9%2041.5-120.3%2041.5-7.8%200-15.5-.5-23.1-1.4C62.8%20432%20113.7%20448%20168.3%20448%20346.6%20448%20444%20300.3%20444%20172.2c0-4.2-.1-8.4-.3-12.5C462.6%20146%20479%20129%20492%20109.5z%22%2F%3E%3C%2Fsvg%3E") center center/10rem 10rem no-repeat;
+  height: 10rem;
+  width: 10rem; }
+
+.fb-contact {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22rgb(0%2C0%2C0)%22%20d%3D%22M426.8%2064H85.2C73.5%2064%2064%2073.5%2064%2085.2v341.6c0%2011.7%209.5%2021.2%2021.2%2021.2H256V296h-45.9v-56H256v-41.4c0-49.6%2034.4-76.6%2078.7-76.6%2021.2%200%2044%201.6%2049.3%202.3v51.8h-35.3c-24.1%200-28.7%2011.4-28.7%2028.2V240h57.4l-7.5%2056H320v152h106.8c11.7%200%2021.2-9.5%2021.2-21.2V85.2c0-11.7-9.5-21.2-21.2-21.2z%22%2F%3E%3C%2Fsvg%3E") center center/10rem 10rem no-repeat;
+  height: 10rem;
+  width: 10rem; }
+
+.insta-contact {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22512%22%20height%3D%22512%22%20viewBox%3D%220%200%20512%20512%22%3E%3Ccircle%20fill%3D%22rgb(0%2C0%2C0)%22%20cx%3D%22256%22%20cy%3D%22255.833%22%20r%3D%2280%22%2F%3E%3Cpath%20fill%3D%22rgb(0%2C0%2C0)%22%20d%3D%22M177.805%20176.887c21.154-21.154%2049.28-32.93%2079.195-32.93s58.04%2011.838%2079.195%2032.992c13.422%2013.42%2023.01%2029.55%2028.232%2047.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51%200-49%2020.49-49%2047v113h85.072c5.222-18%2014.81-34.19%2028.233-47.613zM416.5%20147.7c0%207.07-5.73%2012.8-12.8%2012.8h-38.4c-7.07%200-12.8-5.73-12.8-12.8v-38.4c0-7.07%205.73-12.8%2012.8-12.8h38.4c7.07%200%2012.8%205.73%2012.8%2012.8v38.4zM336.195%20335.28c-21.154%2021.153-49.28%2032.678-79.195%2032.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0%2026.51%2022.49%2049%2049%2049h288c26.51%200%2047-22.49%2047-49v-143h-79.502c-.043%2029-11.687%2057.664-32.803%2078.78z%22%2F%3E%3C%2Fsvg%3E") center center/10rem 10rem no-repeat;
+  height: 10rem;
+  width: 10rem; }
+
+.mtbdesigns {
+  background-color: #000;
+  height: 5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }

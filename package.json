@@ -1,0 +1,18 @@
+{
+  "name": "calcv",
+  "version": "1.0.0",
+  "description": "calCV",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass public/stylesheets/sass/main.scss public/stylesheets/css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "FortAwesome/Font-Awesome": "*",
+    "ionicons-inline": "0.0.11"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

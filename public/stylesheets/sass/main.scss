@@ -1,0 +1,206 @@
+// @import 'ionicons-inline/dist/ionicons';
+// @import '~ionicons-inline/dist/ionicons';
+@import "../../../node_modules/ionicons-inline/dist/ionicons.scss";
+
+$active-link-color: rgba(236, 239, 241, 1);
+
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+   font-family: 'Lato', 'san-serif';
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   line-height: 1.7;
+   box-sizing: border-box;
+}
+
+.background-image {
+    display: flex;
+    flex-direction: row;
+    // background-color: $active-link-color;
+    background-image: url("/public/images/campus.png"); 
+    // background-size: 75% 90%;
+    background-repeat: no-repeat;
+    height: 78vh;
+    background-position: center top;
+    background-attachment: fixed; 
+    margin-top: 1rem;
+    // object-fit: contain;
+}
+
+//---- NAV ----
+.navs {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    background-color: #ffffff;
+    margin: 0rem auto 0 auto;
+    padding: 1rem 8rem 0 6rem;
+}
+
+.twitter {@include ion-logo-twitter(3rem, #000);}
+
+.fb {@include ion-logo-facebook(3rem, #000);}
+
+.insta {@include ion-logo-instagram(3rem, #000);}
+
+.row {
+    display: flex;
+    // flex-wrap: wrap;
+    // padding: 0 4px;
+
+    &--sections {
+        margin: 1.3rem 0 0 0;
+        list-style-type: none;
+        justify-content: flex-end;
+        
+        & a {
+            color: #000;
+            padding: .7rem;
+            border-radius: 2rem;
+            &:link {
+                text-decoration: none;
+                color: #000;
+            }
+            &:active, &:hover {
+                background-color: $active-link-color;
+            }
+        }
+
+        &--each {
+            font-size: 1.7rem;
+        }
+    } 
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+    // padding: 0 4px;
+
+    &--icons {
+        display: flex;
+        // margin-right: 13.5rem;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin-right: 1.2rem;
+
+        &--each {
+            padding-left: .7rem;
+            transition-timing-function: linear;
+            transition-duration: .2s;
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+            }
+        }
+    }
+
+    &--brand {
+        // transform: translateY(-1rem);
+        list-style-type: none;
+        font-size: 3rem;
+
+        & a {
+                color: #000;
+                
+                &:link {
+                    text-decoration: none;
+                    color: #000;
+                }
+        
+                &:active, &:hover {
+                    background-color: #fff;
+                    border-radius: 10rem;
+                }
+            }
+
+        & p {
+            // display: flex;
+            // justify-content: flex-start;
+            // align-content: flex-start;
+            font-size: 1.8rem;
+            margin-left: 1.6rem;
+            transform: translateY(-1rem);
+        }
+    }
+}
+
+//---- Books ----
+.books {
+    background-image: url("/public/images/Bookshelves.jpg"); 
+    background-repeat: no-repeat;
+    height: 78vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+//---- CV/Contact ----
+.cv, .contact, .about {
+    // margin: 2rem 0 0 0;
+
+    & h1 {
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    & iframe {
+        margin: 0 auto;
+
+    }
+
+    & p {
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem 12rem;
+    }
+
+    &-bg--cv {
+        // // // background-color: rgb(224, 224, 224);
+    }
+} 
+
+//---- Contact Icons ----
+
+.contact {
+    display: block;
+    text-align: center;
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.twitter-contact {
+    @include ion-logo-twitter(10rem, #000);
+}
+
+.fb-contact {@include ion-logo-facebook(10rem, #000);}
+
+.insta-contact {@include ion-logo-instagram(10rem, #000);}
+
+//---- Footer ----
+.mtbdesigns {
+    background-color: #000;
+    height: 5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
