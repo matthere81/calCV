@@ -2,15 +2,16 @@
   "name": "calcv",
   "version": "1.0.0",
   "description": "calCV",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "npm init",
+    "start": "npm index.js",
     "compile:sass": "node-sass public/stylesheets/sass/main.scss public/stylesheets/css/style.css -w"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ionicons-inline": "0.0.11"
+    "ionicons-inline": "0.0.11",
+    "node-static": "^0.7.10"
   },
   "devDependencies": {
     "node-sass": "^4.7.2"
